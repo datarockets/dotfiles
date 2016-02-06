@@ -4,7 +4,7 @@
 
 Clone repository to your home directory:
 ```
-git clone git@github.com:datarockets/.dotfiles.git ~/.dotfiles
+git clone git@github.com:datarockets/dotfiles.git ~/.dotfiles
 ```
 
 Install [rcm](https://github.com/thoughtbot/rcm):
