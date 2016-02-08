@@ -8,9 +8,9 @@
 [pull]
   rebase = true
 [alias]
-  hist = log --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset [%an]' --graph --date=short
-  lg = !git --no-pager log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset [%an]' --abbrev-commit --date=short -20
-  lga = !git --no-pager log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset [%an]' --abbrev-commit --date=short -20 --all
+  hist = log --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset [%an]' --graph --date=short --abbrev-commit
+  lg = !git --no-pager hist -20
+  lga = !git lg --all
   aa = add --all
   ap = add --patch
   ci = commit
