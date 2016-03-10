@@ -1,3 +1,4 @@
+source ~/.dotfiles/.zsh/aliases.zsh
 source ~/.dotfiles/.zsh/completion.zsh
 source ~/.dotfiles/.zsh/colors.zsh
 source ~/.dotfiles/.zsh/exports.zsh
