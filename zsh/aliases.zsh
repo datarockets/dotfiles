@@ -29,8 +29,8 @@ alias gr="git rebase"
 
 alias gwipe="git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard"
 alias gup="git pull --rebase --prune $@ && git submodule update --init --recursive"
-alias gbclean = "f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
-alias gbdone = "f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+alias gbclean="f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+alias gbdone="f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 
 # Bundler and Rails Commands
 alias bi='bundle install'

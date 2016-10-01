@@ -1,7 +1,7 @@
-source ~/.dotfiles/zsh/aliases.zsh
-source ~/.dotfiles/zsh/completion.zsh
-source ~/.dotfiles/zsh/colors.zsh
-source ~/.dotfiles/zsh/exports.zsh
-source ~/.dotfiles/zsh/history.zsh
-source ~/.dotfiles/zsh/prompt.zsh
-source ~/.dotfiles/zsh/setopt.zsh
+source ~/.zsh/aliases.zsh
+source ~/.zsh/completion.zsh
+source ~/.zsh/colors.zsh
+source ~/.zsh/exports.zsh
+source ~/.zsh/history.zsh
+source ~/.zsh/prompt.zsh
+source ~/.zsh/setopt.zsh
