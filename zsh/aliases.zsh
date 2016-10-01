@@ -1,49 +1,36 @@
+alias la="ls -lah"
 
-
-alias sl="ls"
-alias ls="ls -G"        # Compact view, show colors
-alias la="ls -AF"       # Compact view, show hidden
-alias ll="ls -a"
-alias l="ls -lah"
-alias l1="ls -1"
-alias lsd="ls -l | grep '^d'" # List only a directories
-
-# Navigation
-alias ..="cd .."         # Go up one directory
-alias ...="cd ../.."     # Go up two directories
-alias ....="cd ../../.." # Go up three directories
-
-# Git Commands
-# Add and Commit are used as functions
-
+# Git
+# Some of those aliases use aliases described in .gitconfig
 alias g="git"
-alias gst="git status -s"
+
+alias gst="git st"
+alias gd="git diff"
+alias gdc="git dc"
+alias ga="git add"
+alias gci="git commit"
+alias gca="git ca"
+
+alias gl="git lg"
+alias gla="git lga"
+
 alias gco="git checkout"
 alias gbr="git branch"
 
-alias gpom="git push origin master"
 alias gp="git push"
 alias gpo="git push origin"
-alias gpu="git push upstream"
-alias gph="git push heroku" 
-alias gphm="git push heroku master" 
+alias gpom="git push origin master"
+alias gphm="git push heroku master"
 
-alias grm="git rm"
-alias ga="git add"
-alias gci="git commit"
-alias gca="git commit --amend"
-alias gcam="git commit --amend --reuse-message=HEAD"
-
-alias gl="git --no-pager log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset [%an]' --abbrev-commit --date=short -20"
-alias gla="gl -all"
-
-alias gpr="git pull --rebase"
+alias gf="git fetch"
+alias gpr="git pr"
 alias gm="git merge"
-alias gr='git rebase'
+alias gr="git rebase"
 
-alias gd="git diff"
-alias gds="git diff --staged"
-alias gdc="git diff --cached"
+alias gwipe="git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard"
+alias gup="git pull --rebase --prune $@ && git submodule update --init --recursive"
+alias gbclean = "f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
+alias gbdone = "f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
 
 # Bundler Commands
 alias be='bundle exec'
