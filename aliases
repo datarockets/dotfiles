@@ -1,4 +1,5 @@
 alias la="ls -lah"
+alias vi="vim"
 
 # Git
 # Some of those aliases use aliases described in .gitconfig
@@ -41,3 +42,6 @@ alias r="bundle exec rails"
 # Other
 alias please="sudo"
 alias pig="ping google.com -t 5"
+
+
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
