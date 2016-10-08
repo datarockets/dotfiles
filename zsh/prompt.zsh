@@ -1,4 +1,4 @@
-function git_prompt_info() {
+git_prompt_info() {
   ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
   ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
 
@@ -17,4 +17,5 @@ GIT_PROMPT_PREFIX=" %{$fg_bold[blue]%}(%{$fg_bold[red]%}"
 GIT_PROMPT_SUFFIX="%{$fg_bold[blue]%})%{$reset_color%}"
 GIT_PROMPT_DIRTY="%{$fg_bold[yellow]%}*%{$reset_color%}"
 
-PS1="%{$fg[green]%}%3~$(git_prompt_info) %{$reset_color%}$ "
+setopt PROMPT_SUBST
+PS1='%{$fg[green]%}%3~$(git_prompt_info) %{$reset_color%}$ '
