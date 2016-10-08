@@ -20,14 +20,21 @@ env RCRC=$HOME/.dotfiles/rcrc rcup
 
 ## Usage
 
-Run `rcup` to make symlinks from ~/.dotfiles directory to home directory. Do it 
-after each repository update.
+Run `rcup` to make symlinks from ~/.dotfiles directory to home directory. See more commands in tutorial: [http://thoughtbot.github.io/rcm/rcm.7.html](http://thoughtbot.github.io/rcm/rcm.7.html).
 
-See more commands in tutorial: [http://thoughtbot.github.io/rcm/rcm.7.html](http://thoughtbot.github.io/rcm/rcm.7.html).
+### Updating
+
+```
+cd ~/.dotfiles
+gup
+rcup
+```
 
 ### Customization
 
 Put your customizations in dotfiles appended with `.local`:
+* `.zshrc.local`
+* `.aliases.local`
 * `.gitconfig.local`
 * `.tmux.conf.local`
 
