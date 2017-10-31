@@ -3,7 +3,9 @@ source ~/.zsh/completion.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/keybindings.zsh
 source ~/.zsh/prompt.zsh
-source ~/.zsh/functions/is_installed.zsh
+source ~/.zsh/helpers/is_installed.zsh
+
+source ~/.zsh/functions/git.zsh
 source ~/.aliases
 
 setopt auto_cd
