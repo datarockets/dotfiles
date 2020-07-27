@@ -1,7 +1,7 @@
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 autoload -U compinit
-compinit
+compinit -u
 
 setopt auto_menu
 setopt complete_in_word
