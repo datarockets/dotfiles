@@ -29,7 +29,7 @@ sudo apt-get update
 sudo apt-get install rcm
 ```
 
-Install dotfiles:
+### Install dotfiles:
 ```
 env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
