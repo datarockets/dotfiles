@@ -7,10 +7,26 @@ Clone repository to your home directory:
 git clone https://github.com/datarockets/dotfiles.git ~/.dotfiles
 ```
 
-Install [rcm](https://github.com/thoughtbot/rcm):
+### Install [rcm](https://github.com/thoughtbot/rcm)
+
+MacOS:
 ```
 brew tap thoughtbot/formulae
 brew install rcm
+```
+
+Ubuntu (19.04 or later):
+```
+sudo apt update
+sudo apt install rcm
+```
+
+Ubuntu (12.04, 14.04, 16.04, 18.04, or 18.10):
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get install rcm
 ```
 
 Install dotfiles:
