@@ -20,8 +20,12 @@ alias gbr="git branch"
 
 alias gp="git push"
 alias gpo="git push origin"
-alias gpom="git push origin master"
-alias gphm="git push heroku master"
+alias gpoh="git push origin HEAD"
+alias gphh="git push heroku HEAD"
+
+# Keep old aliases
+alias gpom="gpoh"
+alias gphm="gphh"
 
 alias gf="git fetch"
 alias gpr="git pr"
