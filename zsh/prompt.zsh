@@ -19,3 +19,7 @@ GIT_PROMPT_DIRTY="%{$fg_bold[yellow]%}*%{$reset_color%}"
 
 setopt PROMPT_SUBST
 PS1='%{$fg[green]%}%3~$(git_prompt_info) %{$reset_color%}$ '
+
+if [[ -v SSH_CLIENT ]] || [[ -v SSH_TTY ]] || [[ -v SSH_CONNECTION ]]; then 
+  PS1="$USER@%M%{$reset_color%}:$PS1"
+fi
