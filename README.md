@@ -1,5 +1,23 @@
 # datarockets dotfiles
 
+If you are using Ubuntu, install zsh:
+
+```
+sudo apt-get update
+sudo apt install zsh
+```
+
+Either make zsh your default shell
+```
+chsh -s $(which zsh)
+zsh
+```
+
+or just use the shell
+```
+zsh
+```
+
 ## Install
 
 Clone repository to your home directory:
@@ -30,6 +48,7 @@ sudo apt-get install rcm
 ```
 
 ### Install dotfiles:
+
 ```
 env RCRC=$HOME/.dotfiles/rcrc rcup
 ```
