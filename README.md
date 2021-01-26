@@ -79,3 +79,9 @@ Put your name and email to `.gitconfig.local`:
   name = Dmitry Zhlobo
   email = dima.zhlobo@datarockets.com
 ```
+## Guides
+
+### Setting up iTerm2
+
+Set ```Delete key sends ^H``` and ```Allow application keypad mode``` options to ```Esc+``` like so:
+![iterm_onboarding](https://user-images.githubusercontent.com/974552/51423673-892daf00-1bd4-11e9-8bfe-c3ae76980f77.png)
