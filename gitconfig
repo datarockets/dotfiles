@@ -17,3 +17,5 @@
   pr = pull --rebase
 [include]
   path = ~/.gitconfig.local
+[init]
+  defaultBranch = main
