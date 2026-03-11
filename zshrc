@@ -16,7 +16,7 @@ export EDITOR=$VISUAL
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-PATH=/usr/local/sbin:$PATH
+PATH=/opt/homebrew/bin:$PATH
 
 { is_installed nodenv } && eval "$(nodenv init -)"
 { is_installed rbenv } && eval "$(rbenv init -)"
