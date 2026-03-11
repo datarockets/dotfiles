@@ -47,5 +47,6 @@ alias r="bundle exec rails"
 alias please="sudo"
 alias pig="ping google.com -t 5"
 
+alias dc="docker compose"
 
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
