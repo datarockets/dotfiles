@@ -18,9 +18,9 @@ alias gla="git lga"
 alias gco="git checkout"
 alias gbr="git branch"
 
-alias gp="git push"
-alias gpo="git push origin"
-alias gpoh="git push origin HEAD"
+alias gp="git push -u"
+alias gpo="git push origin -u"
+alias gpoh="git push origin -u HEAD"
 alias gphh="git push heroku HEAD"
 
 # Keep old aliases
